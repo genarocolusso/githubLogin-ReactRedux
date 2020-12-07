@@ -15,8 +15,8 @@
   --color-icons: #41414d;
   --color-borders: #323238;
   --color-black: #09090a;
-  --color-white: #fff;
-  --color-brand-rocketseat: #8257e6;
+  --color-white: #fff; 
   --color-gradient: linear-gradient(155.34deg,#ff018e -0.59%,#ffa17b 51.28%,#ffcd1e);
-
+  --text: 18px;
+  --text-title: 36px;
 }

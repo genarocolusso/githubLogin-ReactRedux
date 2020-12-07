@@ -44,7 +44,16 @@ button.githubConnect {
   padding: 16px;
 }
 
-
+a { 
+  
+  display: block;
+  cursor: pointer;
+  &:hover{
+     .button{
+       background-color: var(--color-shape-hover);
+     }
+  }
+}
 h1 {
   margin: 40px 0 24px;
   font-size: 54px;

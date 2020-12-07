@@ -1,7 +1,17 @@
 import React, { useState } from "react";
 import './style.scss'
-import { GoOctoface, GoCode ,GoBeaker} from 'react-icons/go'
-export const EventTicket = () => {
+import { GoOctoface } from 'react-icons/go'
+
+
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import { Creators as UserActions } from "../../store/ducks/users";
+
+
+  const EventTicket = ({user}) => {
+
+   
+
   return (
     <>
   <div className="eventTicket"> 
@@ -10,14 +20,21 @@ export const EventTicket = () => {
       <div className="eventDate"></div>
       <div className="eventUser">
         <div className="userImg">
-
+          
+            {user?.avatar_url ?(
+              <img src={user?.avatar_url ? user?.avatar_url : ""} />
+            ) : ""
+            }
+          
+     
         </div>
         <div className="userInfos">
           <div className="userName">
-            Your FullName
+            {user ? user.name : "YourFullName"}
           </div>
           <div className="githubUser">
-          <GoOctoface/>  <p>Yougithub</p>
+          <GoOctoface/>  <p>
+            {user ? user.login : "youtgithub"}</p>
           </div>
         </div>
       </div>
@@ -33,3 +50,12 @@ export const EventTicket = () => {
   </>
   )
 };
+
+
+const mapStateToProps = state => ({
+  user: state.users.user
+});
+  
+export default connect(
+  mapStateToProps 
+)(EventTicket);

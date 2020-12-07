@@ -44,6 +44,8 @@
 
 .eventUser{
 
+  display: flex;
+  align-items: center;
 }
 
 .userImg {
@@ -51,14 +53,29 @@
   height: 60px;
   border-radius: 50%;
   background-color: var(--color-secondary);
+  margin-right: 12px;
+  
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+}
 }
 .userInfos{
-
+display: flex;
+flex-direction: column;
 }
 
-.userName{}
+.userName{
+  font-size: 24px;
+  color: var(--color-secondary);
+  font-weight: 700;
+}
 .githubUser{
-
+  font-size: 14px; 
+display: flex;
 }
 
 .leftSide {
