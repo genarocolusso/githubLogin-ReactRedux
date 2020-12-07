@@ -1,0 +1,57 @@
+h1, h2,h3,h4{
+  color: var(--color-secondary)
+}
+.registerEvent >  *{
+  margin-top: 2rem;
+}
+ .green{
+  color: var(--color-green);
+
+}
+
+.githubConnect span, .githubConnect p {
+  padding: 16px 0px;
+}
+
+button.githubConnect { 
+  outline: none;
+  color: var(--color-secondary);
+  background-color: var(--color-shape);
+  border: 0px;
+  border-radius: 1px;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 64px 1fr;
+  width: 100%;
+  max-width: 300px; 
+  
+  justify-content: space-between;
+  align-items: center;
+}
+.githubConnect p {
+  overflow: hidden;
+  color: inherit;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 156%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px;
+}
+
+
+h1 {
+  margin: 40px 0 24px;
+  font-size: 54px;
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+h2{
+  display:flex;
+  align-items: center;
+}
