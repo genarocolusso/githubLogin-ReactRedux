@@ -9,7 +9,7 @@ import { Creators as UserActions } from "../../store/ducks/users";
 import "./style.scss";
 
 const RegisterEvent = ({ user, login, isLogged }) => {
-  const [data, setData] = useState([]);
+   
   const redirect_uri = process.env.REACT_APP_REDIRECT_URI;
   const client_id = process.env.REACT_APP_CLIENT_ID;
   const client_secret = process.env.REACT_APP_CLIENT_SECRET;
@@ -47,7 +47,7 @@ const RegisterEvent = ({ user, login, isLogged }) => {
         <h2>
           <GoCode className="green iconleft" />
           <p>
-            Inscrição <span className="green">confirmada</span>! 
+            Inscrição <span className="green">confirmada</span>!
           </p>
         </h2>
 
@@ -65,16 +65,15 @@ const RegisterEvent = ({ user, login, isLogged }) => {
             <span>
               <GoOctoface />
             </span>
-             
-              {
-                !isLogged ? (
-                  <p>Conectar  
-                  <GoBeaker className="gradient" /></p>
-               
-                ) : (  <p> {user?.name ?? ""} </p>)
-              }
-             
-             
+
+            {!isLogged ? (
+              <p>
+                Conectar
+                <GoBeaker className="gradient" />
+              </p>
+            ) : (
+              <p> {user?.name ?? ""} </p>
+            )}
           </button>
         </a>
       </div>

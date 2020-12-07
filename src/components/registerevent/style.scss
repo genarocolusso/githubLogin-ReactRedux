@@ -49,8 +49,9 @@ a {
   display: block;
   cursor: pointer;
   &:hover{
-     .button{
-       background-color: var(--color-shape-hover);
+     button{
+ background-color: var(--color-shape-hover); 
+cursor: pointer;
      }
   }
 }
