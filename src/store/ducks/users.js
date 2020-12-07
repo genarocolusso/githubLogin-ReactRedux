@@ -1,6 +1,8 @@
 // store/ducks/auth.js
 
 
+// Action Creators 
+
 export const Creators = {
   login: (user,token) => ({
     type: Types.LOGIN,
@@ -43,9 +45,5 @@ export default function users(state = initialState, action) {
       return state;
   }
 }
-
-// Action Creators
-
  
-
  

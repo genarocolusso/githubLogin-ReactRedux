@@ -4,9 +4,7 @@ import { GoOctoface } from 'react-icons/go'
 
 
 import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-import { Creators as UserActions } from "../../store/ducks/users";
-
+ 
 
   const EventTicket = ({user}) => {
 
