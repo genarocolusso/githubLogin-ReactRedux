@@ -6,7 +6,7 @@
   grid-auto-flow: column; 
   grid-template-columns: 1fr 120px;
   position: relative;
-  max-height: 250px;
+  max-height: 140px;
   min-width: 500px;
 }
 
@@ -40,6 +40,9 @@
 
 .eventDate{
 
+}
+.techs{
+  display: block
 }
 
 .eventUser{

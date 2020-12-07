@@ -14,6 +14,7 @@ import { Creators as UserActions } from "../../store/ducks/users";
 
   return (
     <>
+     <div> 
   <div className="eventTicket"> 
     
     <div className="rightSide">
@@ -47,7 +48,11 @@ import { Creators as UserActions } from "../../store/ducks/users";
     </div>
 
   </div>
-  </>
+          <br/>    
+  <div className="techs">Tecnologias utilizadas: React, Redux, Express, github oauth, Duck pattern</div> 
+  </div>
+  
+   </>
   )
 };
 

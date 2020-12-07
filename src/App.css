@@ -29,3 +29,21 @@ html{
 }
 
 a { text-decoration: none;}
+
+@media  (max-width: 940px){
+
+
+  .mainWrapper {
+    width: 100%;
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+
+
+  }
+  .mainWrapper > *{
+    margin-bottom: 20px;
+  }
+
+}
