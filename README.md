@@ -1,3 +1,10 @@
+# GithubLogin-ReactRedux
+This was a simple study using react, redux, github Oauth and express server.
+
+ 
+![project Image](https://github.com/genarocolusso/githubLogin-ReactRedux/blob/master/event.gif "project Image gif")
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
